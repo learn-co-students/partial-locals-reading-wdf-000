@@ -1,4 +1,4 @@
 <%= @posts.each do |post| %>
-<%= render partial: "authors/author", locals: {post_author: @author} %>
+<%= render partial: "authors/author", locals: {post_author: @post.author} %>
 <%= render 'post' %>
 <% end %>
